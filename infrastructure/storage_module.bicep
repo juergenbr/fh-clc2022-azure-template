@@ -136,6 +136,6 @@ resource functionContentShare 'Microsoft.Storage/storageAccounts/fileServices/sh
   name: '${storageAccounts_jbclc3examplestorage_name_resource.name}/default/${functionContentShareName}'
 }
 
-output storageAccounts_jbclc3examplestorage_name_default_results string = storageAccounts_jbclc3examplestorage_name_default_results.id
+output storageAccounts_jbclc3examplestorage_name_default_results string = storageAccounts_jbclc3examplestorage_name_default_results.name
 output storageAccounts_jbclc3examplestorage_name_default_imageanalysis string = storageAccounts_jbclc3examplestorage_name_default_imageanalysis.name
 output storageaccount_name string = storageAccounts_jbclc3examplestorage_name
