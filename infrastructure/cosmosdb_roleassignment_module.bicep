@@ -27,7 +27,7 @@ resource roleAssignment_cosmosdbaccountreader 'Microsoft.Authorization/roleAssig
   }
 }
 
-resource roleassignment 'Microsoft.DocumentDB/databaseAccounts/sqlRoleAssignments@2021-10-15' = {
+resource roleassignment 'Microsoft.DocumentDB/databaseAccounts/sqlRoleAssignments@2022-08-15' = {
   name: guid(cosmosdb.id)
   parent: cosmosdb
   properties: {
