@@ -58,7 +58,26 @@ Microsoft introduced the requirement to agree to their "Responsible AI" terms of
 3) Open Terminal in the repo root folder
 4) execute `cd ./infrastructure`
 5) execute `az login --use-device-code` and log in to your Azure Free Trial account
-6) execute `az account set --subscription <your subscription name>`
+You should see a similar output:
+```
+[
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "f88d4b73-6bb2-4b9a-abc7-eb96e5a6407c",
+    "id": "fb0e8e47-e203-45b3-a725-3a365ce122ba",
+    "isDefault": true,
+    "managedByTenants": [],
+    "name": "Azure for Students",
+    "state": "Enabled",
+    "tenantId": "f88d4b73-6bb2-4b9a-abc7-eb96e5a6407c",
+    "user": {
+      "name": "p61219@fhooe.at",
+      "type": "user"
+    }
+  }
+]
+```
+6) execute `az account set --subscription <id from above output>`
 7) execute `az deployment sub create --template-file main.bicep --location WestEurope`
    - The deployment will ask for the following values:
      - 'deploymentName': free choosable name for the deployment (e.g. `clc3-example`)
